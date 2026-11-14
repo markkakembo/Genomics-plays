@@ -49,6 +49,8 @@ Biomarker discovery and validation · nephrology and chronic kidney disease · L
 
 Inspired conceptually by [Google Research's PaperOrchestra](https://github.com/google-research/paper-orchestra) and the publication by Song et al. (2026), [arXiv:2604.05018](https://arxiv.org/abs/2604.05018). This project is an independent, narrower implementation; **not a fork, not affiliated with Google, and does not reuse its source code**.
 
+A self-contained PaperOrchestra pipeline is documented in [paper-orchestra/README.md](paper-orchestra/README.md).
+
 ## Roadmap
 
 1. PubMed retrieval and bibliographic validation

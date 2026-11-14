@@ -1,0 +1,14 @@
+paper-orchestra (paperorch) - runnable re-implementation of PaperOrchestra
+
+This project includes, unmodified, the official PaperOrchestra code in ./upstream:
+  https://github.com/google-research/paper-orchestra (commit ca1b3fa, 2026-05-17)
+  Copyright 2026 Google LLC, licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The package ./paperorch is new code written for this project. It imports the agent prompts verbatim from
+./upstream (outline, literature review, section writing, content refinement, PaperBanana plotting and
+AgentReview prompts) and adapts logic from upstream modules (citation verification, BibTeX/key generation,
+accept/revert refinement rule, JSON/LaTeX parsers). Changes relative to upstream are listed in README.md
+("Differences from the paper / official code"). Distributed under the Apache License, Version 2.0.
+
+Paper: Song, Song, Pfister, Yoon. "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper
+Writing." arXiv:2604.05018 (2026).
