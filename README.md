@@ -41,6 +41,10 @@ docker run --rm -p 8080:8080 da-vincis-poet
 
 For cloud deployment, see [architecture and deployment notes](docs/ARCHITECTURE.md). Public hosting requires identity controls, request limits, abuse protection and secret management; **the demo has not been deployed as a hosted service**.
 
+## Research notes
+
+- [DreaMS: learning molecular representations from unannotated mass spectra](docs/research/DREAMS.md) — an attributed review of Bushuiev et al., with reported results, limitations and separate commentary. No original experiments or benchmark reproduction.
+
 ## Research direction
 
 Biomarker discovery and validation · nephrology and chronic kidney disease · LC-MS metabolomics/lipidomics · scientific reproducibility · evidence retrieval · applied bioinformatics.
