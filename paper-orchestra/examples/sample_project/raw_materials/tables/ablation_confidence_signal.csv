@@ -1,0 +1,4 @@
+Confidence signal,NQ EM,TriviaQA EM,HotpotQA EM
+Log-probability only,31.1,54.9,27.2
+Draft agreement only,31.7,55.0,27.6
+Combined (CGR),32.6,55.9,28.4

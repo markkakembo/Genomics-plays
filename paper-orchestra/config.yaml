@@ -1,0 +1,35 @@
+# PaperOrchestra re-implementation config. API keys are read from environment variables or ./.env (never put keys here):
+#   openai -> OPENAI_API_KEY | anthropic -> ANTHROPIC_API_KEY | gemini -> GEMINI_API_KEY (or VERTEX_AI_PROJECT + VERTEX_AI_LOCATION)
+#   optional: SEMANTIC_SCHOLAR_API_KEY (higher rate limits), OPENALEX_EMAIL (polite pool)
+provider: gemini          # gemini (default) | openai | anthropic | mock (offline dry run)
+
+# Override model IDs per role (defaults in paperorch/config.py). Check your provider's current model names.
+models:
+  writer: gemini-3.5-flash
+  reflection: gemini-3.5-flash
+  plotting: gemini-3.5-flash
+  discovery: gemini-3.5-flash
+#   writer: gpt-5
+#   reflection: gpt-5
+#   plotting: gpt-5
+#   discovery: gpt-5-mini
+
+template: iclr2025        # iclr2025 | cvpr2025 (from upstream/templates) or a path to your own template folder
+research_cutoff: null     # "YYYY-MM"; null = current month
+use_plotting: true        # PlotOn (generate figures). false = PlotOff (use raw_materials/figures)
+plotting_max_critic_rounds: 3
+max_reflections: 3        # content refinement iterations (paper: 3)
+review_ensemble: 3        # AgentReview ensemble + meta-review (upstream default 3)
+formatting_loop: true     # VLM page-layout check (only with vision-capable models)
+latex_engine: auto        # auto | latexmk | pdflatex | tectonic
+
+lit:
+  max_search_tasks: 0     # 0 = run every search task the outline asks for (paper behaviour)
+  discovery_workers: 10
+  verify_delay_sec: 1.0
+  min_cite_fraction: 0.9
+  keyword_search_results: 8
+  use_llm_recall: true
+  use_web_search: true
+  use_keyword_search: auto   # true | false | auto (only when the model has no web-search tool)
+  fallback_sources: [arxiv, openalex]
