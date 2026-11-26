@@ -41,6 +41,14 @@ docker run --rm -p 8080:8080 da-vincis-poet
 
 For cloud deployment, see [architecture and deployment notes](docs/ARCHITECTURE.md). Public hosting requires identity controls, request limits, abuse protection and secret management; **the demo has not been deployed as a hosted service**.
 
+## Projects
+
+Small, tested builds, each in its own folder with its own README, tests and sources.
+
+- [Channel Spillover Lab](projects/2026-11-18-channel-spillover-lab/): an educational simulation of channel spillover in multiplexed images.
+- [bb5verify](projects/2026-11-15-bb5verify/): re-runs the BB(5) champion Turing machine with two independent simulators and rebuilds the enumerate-and-decide method at small scale.
+- [collapse-lab](projects/2026-11-15-collapse-lab/): theory-checked toy simulations of model collapse, replace versus accumulate.
+
 ## Research notes
 
 - [DreaMS: learning molecular representations from unannotated mass spectra](docs/research/DREAMS.md) — an attributed review of Bushuiev et al., with reported results, limitations and separate commentary. No original experiments or benchmark reproduction.
